@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>JQuery Input Placeholder - Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
+    <script src="../jquery.input_placeholder.js" type="text/javascript"></script>
+    <style type="text/css">
+      body {
+        font-family: Arial;
+        margin: 1em;
+        padding: 0;
+      }
+      h1 {
+        margin: 0 0 .5em 0;
+      }
+      div {
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        margin: 0;
+        font-size: 16px;
+      }
+      .placeholder {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JQuery Input Placeholder - Example</h2>
+    <form>
+      <input data-placeholder="Enter some text"></input>
+    </form>
+    <script type="text/javascript">
+      $.input_placeholder();
+      $('input').focus();
+    </script>
+  </body>
+</html>
