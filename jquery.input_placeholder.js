@@ -1,3 +1,9 @@
+/*
+* Input Placeholder 1.0 - jQuery Plugin
+*
+* Copyright 2010, Graham Blache, Dan Dofter
+* Dual licensed under the MIT or GPL Version 2 licenses.
+*/
 (function($){
   
   $.input_placeholder = function() {
@@ -8,10 +14,9 @@
       // Build container
       var container = $('<div><span>' + $(input).attr('data-placeholder') + '</span></div>');
       $(container).css('position','relative');
-      
-      var placeholder = $(container).find('span');
 
       // Position placeholder
+      var placeholder = $(container).find('span');
       $(placeholder).css('position','absolute');
       // The 2 extra pixels account for the cursor
       var left = parseInt($(input).css('padding-left')) + 2 + parseInt($(input).css('margin-left')) + parseInt($(input).css('border-left-width'));
