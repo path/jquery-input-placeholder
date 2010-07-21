@@ -32,8 +32,10 @@
       <input data-placeholder="Enter some text"></input>
     </form>
     <script type="text/javascript">
-      $.input_placeholder();
-      $('input').focus();
+      $(document).ready(function() {
+        $(this).inputPlaceholder();
+        $('input').focus();
+      });
     </script>
   </body>
 </html>
